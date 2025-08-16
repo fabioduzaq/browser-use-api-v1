@@ -10,7 +10,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from pydantic import BaseModel
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+from browser_use.llm import ChatOpenAI
 from browser_use import Agent
 
 # Load environment variables
