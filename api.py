@@ -151,10 +151,10 @@ async def delete_task(task_id: str):
 
 @app.post("/tasks/flight-search")
 async def search_flight(
+    background_tasks: BackgroundTasks,
     origin: str, 
     destination: str, 
-    weeks_ahead: int = 3,
-    background_tasks: BackgroundTasks
+    weeks_ahead: int = 3
 ):
     """Specific endpoint for flight searches on Kayak"""
     
